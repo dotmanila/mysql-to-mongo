@@ -100,9 +100,6 @@ def init_params_command():
         help='Destination MongoDB connection password')
     parser.add_option('-o', '--mongo-port', dest='mongo_port', type='int',
         help='Destination MongoDB connection port')
-
-    parser.add_option('-s', '--uri', dest='uri', type='string',
-        help='MongoDB URI connection string')
     (options, args) = parser.parse_args()
 
     return options
